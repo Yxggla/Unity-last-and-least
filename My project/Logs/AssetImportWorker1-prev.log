@@ -22,7 +22,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52325
+65101
 Successfully changed project path to: /Users/dongbaba/专业课/游戏设计与开发/unity-last-and-least/Unity-last-and-least/My project
 /Users/dongbaba/专业课/游戏设计与开发/unity-last-and-least/Unity-last-and-least/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +56,12 @@ Successfully changed project path to: /Users/dongbaba/专业课/游戏设计与�
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7961190080] Host "[IP] 192.168.31.156 [Port] 0 [Flags] 2 [Guid] 3978223633 [EditorId] 3978223633 [Version] 1048832 [Id] OSXEditor(0,YxggdeMBP) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7961190080] Host "[IP] 192.168.31.156 [Port] 0 [Flags] 2 [Guid] 1035180023 [EditorId] 1035180023 [Version] 1048832 [Id] OSXEditor(0,YxggdeMBP) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7961190080] Host "[IP] 192.168.31.156 [Port] 0 [Flags] 2 [Guid] 3978223633 [EditorId] 3978223633 [Version] 1048832 [Id] OSXEditor(0,YxggdeMBP) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7961190080] Host "[IP] 192.168.31.156 [Port] 0 [Flags] 2 [Guid] 1035180023 [EditorId] 1035180023 [Version] 1048832 [Id] OSXEditor(0,YxggdeMBP) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 1.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1c1 (4ec8ee1b2212)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.8f1c1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,46 +76,46 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.8f1c1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.8f1c1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.8f1c1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56835
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56773
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1c1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1c1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001075 seconds.
-- Loaded All Assemblies, in  0.181 seconds
+Registered in 0.000937 seconds.
+- Loaded All Assemblies, in  0.168 seconds
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.148 seconds
-Domain Reload Profiling: 329ms
-	BeginReloadAssembly (42ms)
+- Finished resetting the current domain, in  0.130 seconds
+Domain Reload Profiling: 299ms
+	BeginReloadAssembly (40ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (19ms)
+	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (85ms)
-		LoadAssemblies (42ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (78ms)
+		LoadAssemblies (39ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (84ms)
-			TypeCache.Refresh (83ms)
-				TypeCache.ScanAssembly (74ms)
+		AnalyzeDomain (77ms)
+			TypeCache.Refresh (76ms)
+				TypeCache.ScanAssembly (68ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (149ms)
+	FinalizeReload (131ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (108ms)
+		SetupLoadedEditorAssemblies (97ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (73ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
+			ProcessInitializeOnLoadAttributes (66ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,8 +123,8 @@ Domain Reload Profiling: 329ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.319 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.289 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -132,122 +132,49 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.413 seconds
-Domain Reload Profiling: 733ms
-	BeginReloadAssembly (69ms)
+- Finished resetting the current domain, in  0.386 seconds
+Domain Reload Profiling: 676ms
+	BeginReloadAssembly (64ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (11ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (197ms)
-		LoadAssemblies (130ms)
+		CreateAndSetChildDomain (10ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (180ms)
+		LoadAssemblies (112ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (101ms)
-			TypeCache.Refresh (92ms)
-				TypeCache.ScanAssembly (81ms)
+		AnalyzeDomain (97ms)
+			TypeCache.Refresh (88ms)
+				TypeCache.ScanAssembly (77ms)
 			ScanForSourceGeneratedMonoScriptInfo (6ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (413ms)
+	FinalizeReload (386ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (323ms)
+		SetupLoadedEditorAssemblies (303ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (36ms)
-			ProcessInitializeOnLoadAttributes (272ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (256ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.8f1c1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3076 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (51.1 KB). Loaded Objects now: 3539.
-Memory consumption went from 127.6 MB to 127.6 MB.
-Total: 2.610458 ms (FindLiveObjects: 0.125208 ms CreateObjectMapping: 0.042334 ms MarkObjects: 2.349625 ms  DeleteObjects: 0.092458 ms)
+Unloading 31 unused Assets / (51.1 KB). Loaded Objects now: 3540.
+Memory consumption went from 128.1 MB to 128.0 MB.
+Total: 3.337458 ms (FindLiveObjects: 0.110167 ms CreateObjectMapping: 0.037750 ms MarkObjects: 3.099833 ms  DeleteObjects: 0.089167 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 28615.376699 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Scenes/LP Sets_Sci-Fi Interior.unity
-  artifactKey: Guid(8427cbf1b3de16f40859496fd8d17137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Scenes/LP Sets_Sci-Fi Interior.unity using Guid(8427cbf1b3de16f40859496fd8d17137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18aa9707f17077084f6a59fb03d9d6e4') in 0.000938 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x28b647000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.202 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.443 seconds
-Domain Reload Profiling: 646ms
-	BeginReloadAssembly (71ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (12ms)
-	LoadAllAssembliesAndSetupDomain (92ms)
-		LoadAssemblies (114ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (8ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (443ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (292ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (32ms)
-			ProcessInitializeOnLoadAttributes (245ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3542.
-Memory consumption went from 134.4 MB to 134.3 MB.
-Total: 2.600250 ms (FindLiveObjects: 0.134125 ms CreateObjectMapping: 0.045291 ms MarkObjects: 2.386542 ms  DeleteObjects: 0.033792 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -261,91 +188,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 43.380563 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/Green.mat
-  artifactKey: Guid(fee162d59fc27384da1d8d82cc5618ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/Green.mat using Guid(fee162d59fc27384da1d8d82cc5618ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f38961073740467144e4647ad80b65') in 0.067329 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/Light.mat
-  artifactKey: Guid(5213cbee6a60e0342a13fe158933f5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/Light.mat using Guid(5213cbee6a60e0342a13fe158933f5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe38ee2213b859ff838d4958f09a2a1') in 0.003347 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/WallDark.mat
-  artifactKey: Guid(7746519d153cc77479a6a6e33e87ee7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/WallDark.mat using Guid(7746519d153cc77479a6a6e33e87ee7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031b38f4aa160b2269005bd6c5e97e53') in 0.004395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/WallLight.mat
-  artifactKey: Guid(2d3a94d9321b4104bab0bab7d6ddeb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/WallLight.mat using Guid(2d3a94d9321b4104bab0bab7d6ddeb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafab3656f8af3f486c5f21b59deb0dc') in 0.004915 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/RedLight.mat
-  artifactKey: Guid(a540682ef6898c84b8f23298e7dd7b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/RedLight.mat using Guid(a540682ef6898c84b8f23298e7dd7b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11944fe684077ec164cc4ffb98214f40') in 0.003309 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/Red.mat
-  artifactKey: Guid(c8e7af96faa4c414096a2a689c7f7871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/Red.mat using Guid(c8e7af96faa4c414096a2a689c7f7871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f520086cdc3ac3d7c3235068eb06e885') in 0.004017 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000114 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/WallDark 1.mat
-  artifactKey: Guid(760f6118acef9aa4a870b9e51d9cc44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Models/_Materials/WallDark 1.mat using Guid(760f6118acef9aa4a870b9e51d9cc44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b762820c2a008d325f736a2cd42322') in 0.003857 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 37.806773 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Chunks/Room_Airlock_Left.prefab
-  artifactKey: Guid(b407d062b032434448cb69f341d806c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Chunks/Room_Airlock_Left.prefab using Guid(b407d062b032434448cb69f341d806c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4bb488637b434042a8f8be96619b89f') in 0.142642 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 848
-========================================================================
-Received Import Request.
-  Time since last request: 4.589536 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Pieces/Airlock/Airlock_Enabled.prefab
-  artifactKey: Guid(6827107244ab4384584994f2f08876c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Pieces/Airlock/Airlock_Enabled.prefab using Guid(6827107244ab4384584994f2f08876c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f38587961e52ae830dab4b08a32a6a') in 0.009763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 210
-========================================================================
-Received Import Request.
-  Time since last request: 5.071353 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Pieces/Walls/Wall_Internal_Holder.prefab
-  artifactKey: Guid(db7cc58f66b9af049a8b56e09e798a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Pieces/Walls/Wall_Internal_Holder.prefab using Guid(db7cc58f66b9af049a8b56e09e798a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8491f42fd42ba2c0186576fe4f08c66') in 0.006529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Pieces/Walls/Wall_Type2_Holder.prefab
-  artifactKey: Guid(9c05bcd053b502f4cb7b95c418b889c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DizzyMedia/_Assets/LP Sets_Sci-fi Interior/Prefabs/Environment/Pieces/Walls/Wall_Type2_Holder.prefab using Guid(9c05bcd053b502f4cb7b95c418b889c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b201ddb6ef41b85e079319dda3d44614') in 0.004561 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 38

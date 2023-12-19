@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Animator animator;
@@ -13,12 +13,15 @@ public class NewBehaviourScript : MonoBehaviour
 
     private Vector3 lastMoveDirection;
     private Vector3 smoothMoveVelocity;
+    public Transform cam;
+    private Vector3 direction;
+    public float turnSmoothTime = 0.1f;
+    float turnSmoothVelocity;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        lastMoveDirection = transform.forward; // 初始化为初始朝向
     }
 
     void Update()
@@ -26,33 +29,18 @@ public class NewBehaviourScript : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        Vector3 inputDir = new Vector3(horizontal, 0f, vertical).normalized;
-        Vector3 forward = transform.forward;
+        direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        Vector3 dir = Quaternion.FromToRotation(Vector3.forward, forward) * inputDir;
-
-        if (dir.magnitude >= 0.1f)
+        if (direction.magnitude >= 0.1f)
         {
-            // 仅当方向变化时才更新旋转和移动
-            if (dir != lastMoveDirection)
-            {
-                Quaternion toRotation = Quaternion.LookRotation(dir, Vector3.up);
-                transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, Time.deltaTime * rotationSpeed);
-
-                Vector3 v = movespeed * Time.deltaTime * dir;
-                controller.Move(v);
-            }
-
-            lastMoveDirection = dir;
+            float targetangle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetangle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            Vector3 moveDir = Quaternion.Euler(0f, targetangle, 0f) * Vector3.forward;
+            controller.Move(moveDir * movespeed * Time.deltaTime);
         }
 
-        // if (Input.GetButtonDown("shirt")) // 仅在按下瞬间调整朝向
-        // {
-        //     Quaternion toRotation = Quaternion.LookRotation(dir, Vector3.up);
-        //     transform.rotation = toRotation;
-        // }
-
-        if (Input.GetButton("shirt"))
+        if (Input.GetButton("shift")) // 修改为正确的按钮名字
         {
             movespeed = fast_run_speed;
             animator.SetBool("isRun", true);
@@ -63,10 +51,11 @@ public class NewBehaviourScript : MonoBehaviour
             animator.SetBool("isRun", false);
         }
 
-        animator.SetFloat("speed", Mathf.Abs(horizontal) + Mathf.Abs(vertical)); // 使用水平和垂直输入的绝对值作为动画速度
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetTrigger("attack");
+        }
+
+        animator.SetFloat("speed", Mathf.Abs(horizontal) + Mathf.Abs(vertical));
     }
 }
-
-
-
-
