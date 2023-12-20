@@ -100,7 +100,7 @@ public class DoorCont : MonoBehaviour {
         
         if(!locked){
         
-            if(playDet){
+            if(playDet==false){  //本来是没有false
 
                 if(!doorOpen){
 
