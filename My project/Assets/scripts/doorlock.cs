@@ -9,18 +9,25 @@ public class DoorLock : MonoBehaviour
     public GameObject player; // 人物
     public Camera playerCamera; // 玩家摄像机
     public float maxDistance = 5.0f; // 最大交互距离
+    public string password;
+    public Buttoninput buttonInput;//引用Buttoninput的代码，传密码
+    public GameObject changedoor;
 
     // Start is called before the first frame update
     void Start()
     {
         // 初始化时隐藏密码面板
         passwordPanel.SetActive(false);
+        
     }
 
     // Update is called once per frame
     void Update() {
         // 当玩家靠近门锁并按下E键时
         if (IsPlayerCloseEnough() && Input.GetKeyDown(KeyCode.E)) {
+            buttonInput.rightpassword = password;
+            DoorCont doorComponent = changedoor.GetComponent<DoorCont>();
+            buttonInput.door = doorComponent;
             passwordPanel.SetActive(true); // 显示密码面板
         }
     }

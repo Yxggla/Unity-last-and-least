@@ -11,7 +11,7 @@ public class Buttoninput : MonoBehaviour
     public GameObject passwordPanel; // 密码面板
     public Text text; // 由按钮调用的方法，用于添加数字到输入框
     public DoorCont door; // 引用门的脚本
-    
+    public string rightpassword;
     public void AddNumberToInput(string number)
     {
         inputField.text += number; // 在现有文本后添加数字
@@ -23,10 +23,9 @@ public class Buttoninput : MonoBehaviour
     public void SubmitPassword()
     {
         string inputPassword = inputField.text;
-        string correctPassword = "1234";
 
         // 判断密码是否正确
-        if (inputPassword == correctPassword)
+        if (inputPassword == rightpassword)
         {
             text.text = "Password is right!";
             StartCoroutine(WaitAndClosePanel(2.0f));
