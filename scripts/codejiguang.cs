@@ -13,18 +13,18 @@ public class codejiguang : MonoBehaviour
     {
         // 在2秒后，每3秒调用一次ToggleLaser方法
         InvokeRepeating("ToggleLaser", 2f, 3f);
-        healthBarScript = FindObjectOfType<codeforhealthbar>();
     }
 
     void ToggleLaser()
     {
         // 切换激光状态
         laser.SetActive(!laser.activeSelf);
+        healthBarScript = FindObjectOfType<codeforhealthbar>(); //读取
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isTriggered)  // 确保是玩家碰撞到激光，并且之前没有触发过
+        if (other.CompareTag("Player") && !isTriggered && healthBarScript != null)  // 确保是玩家碰撞到激光，并且之前没有触发过
         {
             Debug.Log("chufa");
             healthBarScript.TakeDamage();

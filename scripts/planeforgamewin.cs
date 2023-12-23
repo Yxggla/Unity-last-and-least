@@ -14,4 +14,4 @@ public class planeforgamewin : MonoBehaviour
         //Application.Quit();
        
     }
-}
+} 
