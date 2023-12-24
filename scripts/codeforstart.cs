@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,15 +9,18 @@ public class codeforstart : MonoBehaviour
 
     public codeforcamera1 Codeforcamera1;
     public GameObject xueliangPanel;
-
+    
     public GameObject camrera;
-    // Start is called before the first frame update
+    public GameObject start2Panel;
+   
+
     public void CloseStartPanel()
     {
-        camrera.SetActive(true);
+        // camrera.SetActive(true);
+        // xueliangPanel.SetActive(true);
+        // Codeforcamera1.StartGame();
         startPanel.SetActive(false);
-        xueliangPanel.SetActive(true);
-        Codeforcamera1.StartGame();
+        start2Panel.SetActive(true);
     }
 
     // 用于退出游戏的函数

@@ -6,7 +6,7 @@ public class forfood : MonoBehaviour
 {
     public GameObject player; // 玩家对象
     public float disappearDistance = 3f; // 消失距离
-    public jishiqi timerScript; // 计时器脚本
+    public codejishiqi timerScript; // 计时器脚本
     public codeforhealthbar healthBarScript; // 假设您有一个 HealthBar 脚本
     void Update()
     {
