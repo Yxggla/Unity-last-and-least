@@ -12,10 +12,6 @@ public class codeforstart1 : MonoBehaviour
     // Start is called before the first frame update
     public void nextPanel()
     {
-        // camrera.SetActive(true);
-        // startPanel.SetActive(false);
-        // xueliangPanel.SetActive(true);
-        // Codeforcamera1.StartGame();
         thenextPanel.SetActive(true);
         nowPanel.SetActive(false);
     }

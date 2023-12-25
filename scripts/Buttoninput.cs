@@ -12,6 +12,9 @@ public class Buttoninput : MonoBehaviour
     public Text text; // 由按钮调用的方法，用于添加数字到输入框
     public DoorCont door; // 引用门的脚本
     public string rightpassword;
+    public GameObject thistdoorlight;
+    public GameObject thistdoorlight2;
+    public Material greenlightMaterial;
     public void AddNumberToInput(string number)
     {
         inputField.text += number; // 在现有文本后添加数字
@@ -28,6 +31,10 @@ public class Buttoninput : MonoBehaviour
         if (inputPassword == rightpassword)
         {
             text.text = "Password is right!";
+            Renderer renderer = thistdoorlight.GetComponent<Renderer>();
+            Renderer renderer2 = thistdoorlight2.GetComponent<Renderer>();
+            renderer.material = greenlightMaterial;
+            renderer2.material = greenlightMaterial;
             StartCoroutine(WaitAndClosePanel(2.0f));
         }
         else
@@ -45,6 +52,8 @@ public class Buttoninput : MonoBehaviour
         inputField.text = "";
         passwordPanel.SetActive(false); // 关闭密码面板
         door.Door(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     
     

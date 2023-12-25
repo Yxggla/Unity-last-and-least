@@ -12,6 +12,8 @@ public class DoorLock : MonoBehaviour
     public string password;
     public Buttoninput buttonInput;//引用Buttoninput的代码，传密码
     public GameObject changedoor;
+    public GameObject thisdoorlight;
+    public GameObject thisdoorlight2;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +28,13 @@ public class DoorLock : MonoBehaviour
         // 当玩家靠近门锁并按下E键时
         if (IsPlayerCloseEnough() && Input.GetKeyDown(KeyCode.E)) {
             buttonInput.rightpassword = password;
+            buttonInput.thistdoorlight = thisdoorlight;
+            buttonInput.thistdoorlight2 = thisdoorlight2;
             DoorCont doorComponent = changedoor.GetComponent<DoorCont>();
             buttonInput.door = doorComponent;
             passwordPanel.SetActive(true); // 显示密码面板
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 

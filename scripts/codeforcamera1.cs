@@ -12,8 +12,18 @@ public class codeforcamera1 : MonoBehaviour
     public GameObject startPanel3;
     public GameObject startPanel4;
     public GameObject startPanel5;
-
+    public GameObject caidanPanel6;
     public GameObject xueliangPanel;
+    public GameObject xiaoshuai1;
+    public GameObject xiaoshuai2;
+    public GameObject xiaoshuai3;
+    public GameObject xiaoshuai4;
+    public GameObject xiaoshuai5;
+    public GameObject xiaoshuai6;
+    public GameObject xiaoshuai7;
+    public GameObject xiaoshuai8;
+    public GameObject xiaoshuaipanel;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +36,16 @@ public class codeforcamera1 : MonoBehaviour
         startPanel4.SetActive(false);
         startPanel5.SetActive(false);
         xueliangPanel.SetActive(false);
+        caidanPanel6.SetActive(false);
+        xiaoshuai1.SetActive(false);
+        xiaoshuai2.SetActive(false);
+        xiaoshuai3.SetActive(false);
+        xiaoshuai4.SetActive(false);
+        xiaoshuai5.SetActive(false);
+        xiaoshuai6.SetActive(false);
+        xiaoshuai7.SetActive(false);
+        xiaoshuai8.SetActive(false);
+        xiaoshuaipanel.SetActive(false);
     }
 
     // 在点击开始游戏按钮时调用此方法
