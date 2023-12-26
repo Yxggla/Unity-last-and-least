@@ -15,6 +15,9 @@ public class Buttoninput : MonoBehaviour
     public GameObject thistdoorlight;
     public GameObject thistdoorlight2;
     public Material greenlightMaterial;
+    public GameObject xiaoshuaitext5;
+    public GameObject xiaoshuaipanel;
+    private bool tixing = false;
     public void AddNumberToInput(string number)
     {
         inputField.text += number; // 在现有文本后添加数字
@@ -54,6 +57,13 @@ public class Buttoninput : MonoBehaviour
         door.Door(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        if (tixing==false)
+        {
+            xiaoshuaitext5.SetActive(true);
+            xiaoshuaipanel.SetActive(true);
+            tixing = true;
+        }
+        
     }
     
     

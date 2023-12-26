@@ -18,7 +18,9 @@ public class PlayerController : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     public GameObject xueliangpanel;
-
+    public room2xiaoshuai room2xiaoshuai;
+    public GameObject passwordpanel;
+    public GameObject stonePrefab;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -29,7 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-
+        bool disapper = room2xiaoshuai.canDisappear;
         direction = new Vector3(horizontal, 0f, vertical).normalized;
         if (xueliangpanel.activeSelf)
         {
@@ -54,10 +56,28 @@ public class PlayerController : MonoBehaviour
                 movespeed = slow_run_speed;
                 animator.SetBool("isRun", false);
             }
-
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !passwordpanel.activeSelf )
             {
                 animator.SetTrigger("attack");
+                if (disapper)
+                {
+                    GameObject[] boxes = GameObject.FindGameObjectsWithTag("box");
+                    foreach (GameObject box in boxes)
+                    {
+                        float distance = Vector3.Distance(transform.position, box.transform.position);
+                        if (distance <= 3f)
+                        {
+                            Debug.Log(distance);
+                            float dropChance = 0.7f;
+                            // 检查是否生成石头
+                            if (Random.value < dropChance)
+                            {
+                                Instantiate(stonePrefab, box.transform.position, Quaternion.identity);
+                            }
+                            Destroy(box); // 销毁距离小于或等于 3f 的 box
+                        }
+                    }
+                }
             }
 
             animator.SetFloat("speed", Mathf.Abs(horizontal) + Mathf.Abs(vertical));
@@ -71,6 +91,7 @@ public class PlayerController : MonoBehaviour
         Vector3 gravity = new Vector3(0, -9.8f, 0); // 重力值
         controller.Move(gravity * Time.deltaTime);
     }
+    
 
     // bool IsGrounded()
     // {
@@ -88,5 +109,6 @@ public class PlayerController : MonoBehaviour
     //     }
     //     return false;
     // }
+    
     
 }

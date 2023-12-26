@@ -22,6 +22,9 @@ public class codeforcamera1 : MonoBehaviour
     public GameObject xiaoshuai6;
     public GameObject xiaoshuai7;
     public GameObject xiaoshuai8;
+    public GameObject xiaoshuai9;
+    public GameObject xiaoshuai10;
+    public GameObject shitoupanel;
     public GameObject xiaoshuaipanel;
     
     // Start is called before the first frame update
@@ -45,7 +48,10 @@ public class codeforcamera1 : MonoBehaviour
         xiaoshuai6.SetActive(false);
         xiaoshuai7.SetActive(false);
         xiaoshuai8.SetActive(false);
+        xiaoshuai9.SetActive(false);
+        xiaoshuai10.SetActive(false);
         xiaoshuaipanel.SetActive(false);
+        shitoupanel.SetActive(false);
     }
 
     // 在点击开始游戏按钮时调用此方法
