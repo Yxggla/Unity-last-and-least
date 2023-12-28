@@ -26,7 +26,6 @@ public class codejiguang : MonoBehaviour
     {
         if (other.CompareTag("Player") && !isTriggered && healthBarScript != null)  // 确保是玩家碰撞到激光，并且之前没有触发过
         {
-            Debug.Log("chufa");
             healthBarScript.TakeDamage();
             isTriggered = true;  // 标记为已触发
         }

@@ -26,7 +26,11 @@ public class codeforcamera1 : MonoBehaviour
     public GameObject xiaoshuai10;
     public GameObject shitoupanel;
     public GameObject xiaoshuaipanel;
-    
+    public GameObject imgpaper1;
+    public GameObject imgpaper2;
+    public GameObject mimapanel;
+
+    public GameObject imgpaper3;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +56,10 @@ public class codeforcamera1 : MonoBehaviour
         xiaoshuai10.SetActive(false);
         xiaoshuaipanel.SetActive(false);
         shitoupanel.SetActive(false);
+        imgpaper1.SetActive(false);
+        imgpaper2.SetActive(false);
+        imgpaper3.SetActive(false);
+        mimapanel.SetActive(false);
     }
 
     // 在点击开始游戏按钮时调用此方法

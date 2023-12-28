@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
     public room2xiaoshuai room2xiaoshuai;
     public GameObject passwordpanel;
     public GameObject stonePrefab;
+    public GameObject bookPrefab;
+    public GameObject book2Prefab;
+    private bool canSpawnEnemy = true; // 控制是否可以生成敌人
+    public wxrroom2suiji wxrroom2;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -78,6 +82,58 @@ public class PlayerController : MonoBehaviour
                         }
                     }
                 }
+                GameObject[] wxyboxes = GameObject.FindGameObjectsWithTag("enemy");
+                if (wxyboxes !=null)
+                {
+                    foreach (GameObject wxy in wxyboxes)
+                    {
+                        float distance = Vector3.Distance(transform.position, wxy.transform.position);
+                        if (distance <= 2.5f)
+                        {
+                            Destroy(wxy); 
+                        }
+                    }
+                }
+                
+                GameObject wxydl = GameObject.FindGameObjectWithTag("enemydl");
+                if (wxydl !=null)
+                {
+                    float distancedl = Vector3.Distance(transform.position, wxydl.transform.position);
+                    if (distancedl <= 2.5f)
+                    {
+                        Destroy(wxydl); 
+                        Instantiate(bookPrefab, wxydl.transform.position, Quaternion.identity);
+                    }
+                }
+                
+                
+                    // 生成敌人的逻辑
+                // GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemysjdl");
+                // if (enemies!=null)
+                // {
+                //     foreach (GameObject enemy in enemies)
+                //     {
+                //         float distance = Vector3.Distance(transform.position, enemy.transform.position);
+                //
+                //         if (distance <= 2.5f)
+                //         {
+                //             // 摧毁敌人并生成书本
+                //             DestroyEnemyAndSpawnBook(enemy);
+                //         }
+                //     }
+                // }
+                
+                GameObject wxydl2 = GameObject.FindGameObjectWithTag("enemysjdl");
+                if (wxydl2 !=null)
+                {
+                    float distancesjdl = Vector3.Distance(transform.position, wxydl2.transform.position);
+                    if (distancesjdl <= 2.5f)
+                    {
+                        Destroy(wxydl2); 
+                        Instantiate(book2Prefab, wxydl2.transform.position, Quaternion.identity);
+                    }
+                }
+                
             }
 
             animator.SetFloat("speed", Mathf.Abs(horizontal) + Mathf.Abs(vertical));
@@ -91,7 +147,22 @@ public class PlayerController : MonoBehaviour
         Vector3 gravity = new Vector3(0, -9.8f, 0); // 重力值
         controller.Move(gravity * Time.deltaTime);
     }
-    
+    // private void DestroyEnemyAndSpawnBook(GameObject enemy)
+    // {
+    //     float dropChance = 0.4f;
+    //
+    //     // 检查是否生成书本
+    //     if (Random.value < dropChance && canSpawnEnemy)
+    //     {
+    //         Instantiate(book2Prefab, enemy.transform.position, Quaternion.identity);
+    //         canSpawnEnemy = false;
+    //         wxrroom2.TogglePause();
+    //     }
+    //
+    //     // 摧毁敌人
+    //     Destroy(enemy);
+    //     
+    // }
 
     // bool IsGrounded()
     // {
