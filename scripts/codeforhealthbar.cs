@@ -35,6 +35,8 @@ public class codeforhealthbar : MonoBehaviour
     void GameOver()
     {
         // 激活游戏失败面板
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         gameOverPanel.SetActive(true);
 
         // 在这里可以添加其他游戏失败的逻辑

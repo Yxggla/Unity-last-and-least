@@ -27,7 +27,6 @@ public class codeforstart2 : MonoBehaviour
         xiaoshuai1.SetActive(true);
         
     }
-
     public void wanfaPanel()
     {
         nowPanel.SetActive(false);

@@ -18,6 +18,13 @@ public class Buttoninput : MonoBehaviour
     public GameObject xiaoshuaitext5;
     public GameObject xiaoshuaipanel;
     private bool tixing = false;
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        { 
+            passwordPanel.SetActive(false);
+        }
+    }
     public void AddNumberToInput(string number)
     {
         inputField.text += number; // 在现有文本后添加数字

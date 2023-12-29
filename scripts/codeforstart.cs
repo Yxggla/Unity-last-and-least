@@ -19,7 +19,7 @@ public class codeforstart : MonoBehaviour
     // 用于退出游戏的函数
     public void ExitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
-        //Application.Quit();
+        // UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 }

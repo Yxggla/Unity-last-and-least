@@ -12,6 +12,8 @@ public class codeforgamewin : MonoBehaviour
     {
         if (other.gameObject.tag == "Player") // 检查标签是否为"Player"
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             gamewinplane.SetActive(true); // 激活指定的游戏对象
         }
     }
