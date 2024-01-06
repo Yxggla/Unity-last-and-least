@@ -18,6 +18,12 @@ public class Buttoninput : MonoBehaviour
     public GameObject xiaoshuaitext5;
     public GameObject xiaoshuaipanel;
     private bool tixing = false;
+    private AudioSource audioSource;
+    
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -62,6 +68,7 @@ public class Buttoninput : MonoBehaviour
         inputField.text = "";
         passwordPanel.SetActive(false); // 关闭密码面板
         door.Door(true);
+        PlaySound();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         if (tixing==false)
@@ -71,6 +78,10 @@ public class Buttoninput : MonoBehaviour
             tixing = true;
         }
         
+    }
+    public void PlaySound()
+    {
+        audioSource.Play();
     }
     
     

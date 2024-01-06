@@ -25,10 +25,12 @@ public class PlayerController : MonoBehaviour
     public GameObject book2Prefab;
     private bool canSpawnEnemy = true; // 控制是否可以生成敌人
     public wxrroom2suiji wxrroom2;
+    private AudioSource audioSource;
     void Start()
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -62,6 +64,7 @@ public class PlayerController : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(0) && !passwordpanel.activeSelf )
             {
+               
                 animator.SetTrigger("attack");
                 if (disapper)
                 {
@@ -180,6 +183,9 @@ public class PlayerController : MonoBehaviour
     //     }
     //     return false;
     // }
-    
+    public void attackvoice()
+    {
+        audioSource.Play();
+    }
     
 }

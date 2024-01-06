@@ -14,6 +14,7 @@ public class DoorLock : MonoBehaviour
     public GameObject changedoor;
     public GameObject thisdoorlight;
     public GameObject thisdoorlight2;
+    
 
     // Start is called before the first frame update
     void Start()

@@ -9,7 +9,6 @@ public class jianshitou : MonoBehaviour
     {
         if (other.CompareTag("stone"))
         {
-            Debug.Log("1");
             jianshitou1.shitouDamage();
             Destroy(other.gameObject);
         }
