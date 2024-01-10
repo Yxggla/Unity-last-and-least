@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,19 +13,20 @@ public class codeforstart2 : MonoBehaviour
     public GameObject camrera;
     public GameObject xiaoshuai1;
     public GameObject xiaoshuaipanel;
+    public Text yonghutext;
+    public value playvalue; 
 
-    
     // Start is called before the first frame update
     public void kaishiPanel()
     {
         nowPanel.SetActive(false);
         camrera.SetActive(true);
-       // xueliangPanel.SetActive(true);
         Codeforcamera1.StartGame();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         xiaoshuaipanel.SetActive(true);
         xiaoshuai1.SetActive(true);
+        // xueliangPanel.SetActive(true);
         
     }
     public void wanfaPanel()

@@ -29,6 +29,7 @@ public class codeforcamera1 : MonoBehaviour
     public GameObject imgpaper1;
     public GameObject imgpaper2;
     public GameObject mimapanel;
+    public GameObject playfabpanel;
 
     public GameObject imgpaper3;
     // Start is called before the first frame update
@@ -60,6 +61,7 @@ public class codeforcamera1 : MonoBehaviour
         imgpaper2.SetActive(false);
         imgpaper3.SetActive(false);
         mimapanel.SetActive(false);
+        playfabpanel.SetActive(false);
     }
 
     // 在点击开始游戏按钮时调用此方法

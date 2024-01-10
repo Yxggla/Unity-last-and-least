@@ -15,7 +15,8 @@ public class forwaixingren : MonoBehaviour
     public GameObject healthBarObject;
     private bool canTakeDamage = true;  // 控制是否可以扣血
     private float damageCooldown = 3f;  // 扣血的冷却时间
-    private NavMeshAgent agent; 
+    private NavMeshAgent agent;
+    
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -33,6 +34,7 @@ public class forwaixingren : MonoBehaviour
 
     private void Update()
     {
+        
         float distance = Vector3.Distance(transform.position, player.position);
         if (distance <= attackDistance && canTakeDamage)
         {

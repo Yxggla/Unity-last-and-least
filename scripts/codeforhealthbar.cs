@@ -9,10 +9,19 @@ public class codeforhealthbar : MonoBehaviour
     public Slider healthSlider; // 血量滑动条
     public GameObject gameOverPanel; // 游戏失败面板
     public Text healthNumber;
-    private void Start()
+    public value playvalue;
+    private bool gengxin=true;
+    public jixvgame Jixvgame;
+    public void Update()
     {
         // 初始化滑动条值
-        healthSlider.value = healthSlider.maxValue;
+        if (gengxin && Jixvgame.jxyxjr)
+        {
+            healthSlider.value =playvalue.playerHealth;
+            gengxin = false;
+            healthNumber.text=healthSlider.value+" "+"/"+" "+healthSlider.maxValue;
+        }
+        
     }
 
     // 减少血量

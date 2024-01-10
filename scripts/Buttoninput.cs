@@ -66,9 +66,9 @@ public class Buttoninput : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         text.text = "";
         inputField.text = "";
+        PlaySound();
         passwordPanel.SetActive(false); // 关闭密码面板
         door.Door(true);
-        PlaySound();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         if (tixing==false)
