@@ -171,5 +171,12 @@ Unity3D是一款跨平台的游戏开发引擎，提供了强大的3D渲染能�
 - **问题5.在photon的连接中，会经常断开连接，connection lost。**
 
   - **解决方案**：建议直接去网站https://vibrantlink.com，去注册免费的国内photon。但是如果邮箱没有发来所对应的国内APP ID那么就只能硬连Photon
+ 
+
+
+### 游戏截图
+
+<img width="1512" alt="截屏2024-09-04 21 00 52" src="https://github.com/user-attachments/assets/832441d9-a188-4790-b959-5156f5685dc9">
+
 
 
